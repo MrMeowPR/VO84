@@ -12,6 +12,23 @@
     h1 {
       text-align: center;
     }
+    .legend {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .legend-item {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+    .legend .status {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -34,6 +51,7 @@
     }
     .card h2 {
       margin: 10px 0;
+      font-size: 1.2em;
     }
     .card a {
       display: inline-block;
@@ -47,73 +65,82 @@
     .card a:hover {
       background-color: #0056b3;
     }
+    .status {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    .green { background-color: green; }
+    .red { background-color: red; }
   </style>
 </head>
 <body>
 
   <h1>Candidate Showcase</h1>
+
+  <!-- Legend -->
+  <div class="legend">
+    <span class="legend-item"><span class="status green"></span>Disponible</span>
+    <span class="legend-item"><span class="status red"></span>No disponible</span>
+  </div>
+
+  <!-- Grid of candidates -->
   <div class="grid">
 
-    <!-- Candidate 1 -->
     <div class="card">
       <img src="photo1.jpg" alt="Sandra">
-      <h2>Sandra</h2>
+      <h2><span class="status green"></span>Sandra</h2>
       <a href="resume1.pdf" download>Download PDF</a>
     </div>
 
-    <!-- Candidate 2 -->
     <div class="card">
       <img src="photo2.jpg" alt="Ricardo">
-      <h2>Ricardo</h2>
+      <h2><span class="status red"></span>Ricardo</h2>
       <a href="resume2.pdf" download>Download PDF</a>
     </div>
 
-    <!-- Candidate 3 -->
     <div class="card">
       <img src="photo3.jpg" alt="Christian">
-      <h2>Christian</h2>
+      <h2><span class="status green"></span>Christian</h2>
       <a href="resume3.pdf" download>Download PDF</a>
     </div>
 
-    <!-- Candidate 4 -->
     <div class="card">
       <img src="photo4.jpg" alt="Omar">
-      <h2>Omar</h2>
+      <h2><span class="status green"></span>Omar</h2>
       <a href="resume4.pdf" download>Download PDF</a>
     </div>
 
-    <!-- Candidate 5 -->
     <div class="card">
       <img src="photo5.jpg" alt="Tyrone">
-      <h2>Tyrone</h2>
+      <h2><span class="status red"></span>Tyrone</h2>
       <a href="resume5.pdf" download>Download PDF</a>
     </div>
 
-    <!-- Candidate 6 -->
     <div class="card">
       <img src="photo6.jpg" alt="Edwin (Panda)">
-      <h2>Edwin (Panda)</h2>
+      <h2><span class="status green"></span>Edwin (Panda)</h2>
       <a href="resume6.pdf" download>Download PDF</a>
     </div>
 
-    <!-- Candidate 7 -->
     <div class="card">
       <img src="photo7.jpg" alt="Virgen">
-      <h2>Virgen</h2>
+      <h2><span class="status green"></span>Virgen</h2>
       <a href="resume7.pdf" download>Download PDF</a>
     </div>
 
-    <!-- Candidate 8 -->
     <div class="card">
       <img src="photo8.jpg" alt="Valeria">
-      <h2>Valeria</h2>
+      <h2><span class="status red"></span>Valeria</h2>
       <a href="resume8.pdf" download>Download PDF</a>
     </div>
 
-    <!-- Candidate 9 -->
     <div class="card">
       <img src="photo9.jpg" alt="Diana">
-      <h2>Diana</h2>
+      <h2><span class="status green"></span>Diana</h2>
       <a href="resume9.pdf" download>Download PDF</a>
     </div>
 
